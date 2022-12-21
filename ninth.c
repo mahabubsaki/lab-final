@@ -9,7 +9,7 @@ int main()
     scanf("%d", &testcase);
     for (int l = 1; l <= testcase; l++)
     {
-        int numbers, found = 0, searchVal;
+        int numbers, found = -1, searchVal;
         scanf("%d", &numbers);
         int array[numbers];
         for (int i = 0; i < numbers; i++)
@@ -25,9 +25,9 @@ int main()
                 break;
             }
         }
-        if (found)
+        if (found != -1)
         {
-            printf("Case %d: %d", l, found + 1);
+            printf("Case %d: %d", l, found);
         }
         else
         {
